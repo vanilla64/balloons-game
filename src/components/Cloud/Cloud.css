@@ -1,0 +1,43 @@
+.cloud {
+  width: 160px;
+  height: 70px;
+  border-radius: 30%;
+  position: relative;
+  top: 30px;
+  left: -250px;
+  background: linear-gradient(white, whitesmoke);
+  animation: fly-cloud 140s linear infinite;
+  opacity: .9;
+}
+
+.cloud:before {
+  content: '';
+  width: 90px;
+  height: 60px;
+  border-radius: 45%;
+  background: linear-gradient(white, whitesmoke);
+  position: absolute;
+  top: 12%;
+  left: -40%;
+}
+
+.cloud:after {
+  content: '';
+  width: 110px;
+  height: 60px;
+  border-radius: 45%;
+  background: linear-gradient(white, whitesmoke);
+  position: absolute;
+  top: 12%;
+  right: -50%;
+}
+
+@keyframes fly-cloud {
+  from {
+    transform: translateX(calc(0vw));
+  }
+
+  to {
+    transform: translateX(150vw);
+  }
+}

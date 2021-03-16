@@ -1,0 +1,25 @@
+.sun {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(to left bottom, yellow, lemonchiffon);
+  opacity: .90;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  animation: sun-fly 5s infinite ease-in-out;
+}
+
+@keyframes sun-fly {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  50%  {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
